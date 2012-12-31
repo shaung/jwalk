@@ -3,6 +3,7 @@ ClearScreen = require './ClearScreen'
 ExitProcess = require './ExitProcess'
 Help        = require './Help'
 ShowKeys    = require './ShowKeys'
+Describe    = require './Describe'
 Inspect     = require './Inspect'
 
 commands =
@@ -11,6 +12,7 @@ commands =
 	cls:   new ClearScreen()
 	exit:  new ExitProcess()
 	keys:  new ShowKeys()
+	ll:    new Describe()
 	ls:    new Inspect()
 	quit:  new ExitProcess()
 

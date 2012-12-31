@@ -88,6 +88,28 @@ jwalk obj{8} / $ ls
   engine: 'node >= 0.8.x' }
 ```
 
+### Describe
+
+Show the schema of the given node.
+
+```
+jwalk obj{8} / $ ll
+/
+  name string(5) "jwalk"
+  version string(5) "0.0.4"
+  description string(27) "command-line json inspector"
+  preferGlobal string(4) "true"
+  repositories object 
+  bin object 
+  dependencies object 
+  engine string(13) "node >= 0.8.x"
+jwalk obj{8} / $ ll repositories
+/repositories/
+  type string(3) "git"
+  url string(31) "http://github.com/nkohari/jwalk"
+```
+
+
 ### Change Directory
 
 Allows navigation through the JSON tree. Note 'cd' does support autocomplete by pressing the tab key.
